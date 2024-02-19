@@ -1,0 +1,54 @@
+<!---- © Koshik Kumar --->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>YouTube Thumbnail Downloader</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="YouTube Thumbnail Downloader that allows you to download thumbnail from youtube in different qualities."/>
+    <link rel="canonical" href="https://KoshikKumar17.github.io/ytthumbdl"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.min.css"/>
+  </head>
+  <body>
+    <font style="font-size:20px;" color="black"><a href="https://KoshikKumar17.github.io"><b>Koshik Kumar</b></a></font>
+    <div class="container wrapper">
+      <h3>Youtube Thumbnail Downloader</h3>
+        <p>Copy YouTube video url. Paste it in text field showing down. Click Get Thumbnail.</p>
+        <div class="input-group">
+            <input id="url" type="url" placeholder="Enter youtube url">
+        </div>
+        <label for="">Resolution</label>
+        <select name="" id="resolutionSelect">
+            <option value="maxresdefault">Max Resolution</option>
+            <option value="sddefault">Standard Definition</option>
+            <option value="hqdefault">High Quality</option>
+            <option value="mqdefault">Medium Quality</option>
+        </select>
+        <button id="Download_btn" class="inline-flex items-center justify-center h-10 gap-2 px-5 text-sm font-medium tracking-wide text-white transition duration-300 rounded shadow-md focus-visible:outline-none whitespace-nowrap bg-emerald-500 shadow-emerald-200 hover:bg-emerald-600 hover:shadow-sm hover:shadow-emerald-200 focus:bg-emerald-700 focus:shadow-sm focus:shadow-emerald-200 disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-300 disabled:shadow-none">
+            <span>Get Thumbnail</span>
+        </button>
+        <!-- End Base primary elevated button -->
+        <div id="output" class="output">
+        </div>
+    </div>
+    <!---- Footer Starts ---->
+    <footer style="background:black;" align="center">
+      <font color="white"> <b>© 2024</b> | <a href="https://telegram.me/KoshikKumar"><b><i>Koshik Kumar</i></b></a> <br/></font>
+      <font style="font-size:9px;" color="white"><i><b>Last Modified: <span id="lastModified"></span> IST </b></i>
+    </footer>
+    <!---- Footer Ends ---->
+    <!---- Last Modified object ---->
+    <script>
+      //---->
+      var text = document.lastModified;
+      document.getElementById("lastModified").innerHTML = text;
+      //---->
+    </script>
+    <script src="script.js"></script>
+    <!-- Tailwind CSS  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
