@@ -40,7 +40,7 @@ download_btn.addEventListener("click", function() {
 
   function extractVideoId(url) {
     var videoId = null;
-    var pattern = /(?:https?:\/\/(?:www\.)?)?youtu(?:be\.com\/(?:watch\?v=|embed\/|v\/)|\.be\/)([\w‌\-]+)(?:[\?&]t=([\dhm‌s]+))?/i;
+    var pattern = /(?:https?:\/\/(?:www\.)?)?youtu(?:be\.com\/(?:watch\?v=|embed\/|v\/)|\.be\/)([\w‌\-]+)(?:[\?&]t=([\dhm‌s]+))?|youtube\.com\/shorts\/[a-zA-Z0-9_-]+(\?[^#\s]*)?/i;
     var match = url.match(pattern);
     if (match && match[1].length === 11) {
       videoId = match[1];
